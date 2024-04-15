@@ -25,9 +25,9 @@ This firmware compiles with the following toolsets and versions.
 3. Download and install Segger J-Link (current version v7.96d).
 4. Download and install VS Code (current version 1.88.0). Install appropriate extension packs to build and edit code...
 5. Open VS Code:
-	- Select Extesnsions icon from lefthand toolbar.
-	- Install nRF Connect for VS Code 
-	- Install nRF Connect for VS Code Extensions
+	- Select Extensions icon from lefthand toolbar.
+	- Install nRF Connect for VS Code. 
+	- Install nRF Connect for VS Code Extensions.
 	- When in doubt, refer to the [nRF Connect for VS Code website](https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-VS-Code/) from Nordic and follow the "Installation" video.
 6. Download and install Silicon Labs VCP drivers (needed for UART serial terminal).
 
