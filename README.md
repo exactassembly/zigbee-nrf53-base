@@ -4,7 +4,6 @@ This project targets ZephyrOS on Nordic nRF53 devices with Zigbee protocol using
 
 
 ## Toolchain
-```
 
 This firmware compiles with the following toolsets and versions.
 
@@ -17,7 +16,7 @@ This firmware compiles with the following toolsets and versions.
 * nRF Connect for VS Code Extension Version > v2023.11.3
 * Zephyr version: 3.5.99
 * Slicon Labs CP210x USB to UART Bridge VCP Driver https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers
-```
+
 ## Setup
 
 1. Download and install nRF Connect for Desktop.
@@ -37,24 +36,26 @@ This firmware compiles with the following toolsets and versions.
 Clone GitHub repository into your local worksapce directory. https://github.com/exactassembly/zigbee-nrf53-base.git
 
 ## Build
-	- Select the nRF Connect tool icon from the menu on the left.
-	- From the WELCOME menu in NRF CONNECT select "Open an existing application".
-	- Select the folder with the application.
-	- Under the APPLICATIONS menu select "Add build configuration".
-	- From the dropdaown menu on the build wind select "nrf5340dk_nrf5340_cpuapp"
-	- Leave all defaults and select the "Build Configuration" button.
+
+1. Select the nRF Connect tool icon from the menu on the left.
+2. From the WELCOME menu in NRF CONNECT:
+	- Select "Manage toolchains": Verify v2.6.0 is installed and set to active toolchain.
+	- Select "Manage SDK's": Verify v2.6.0 is installed and set to active SDK
+	- Select "Open an existing application": Select the folder with the application.
+3. Under the APPLICATIONS menu select "Add build configuration".
+4. From the dropdaown menu on the build window select "nrf5340dk_nrf5340_cpuapp"
+5. Leave all defaults and select the "Build Configuration" button.
 
 ## Flash
-```
+
 1. Connect J-Link JTag probe to header on development kit.
 2. From nRF Connect SDK toolbar, select "Flash".
-```
 
 ### Useful Hints:
 
 * If board becomes unresponsive or produces fatal errors:
 	- From GitBash Terminal:
-	nrfjprog --help
-	nrfjprog --revover
-	rnfjprog --eraseall
+		- nrfjprog --help
+		- nrfjprog --revover
+		- rnfjprog --eraseall
 
