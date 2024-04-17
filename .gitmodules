@@ -1,0 +1,3 @@
+[submodule "network_coordinator"]
+	path = network_coordinator
+	url = https://github.com/exactassembly/zigbee-nrf53-base.git
